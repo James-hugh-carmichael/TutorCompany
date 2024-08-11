@@ -1,0 +1,113 @@
+body{
+    margin: 0px;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 60px;
+}
+
+
+.header{
+    width: 100%;
+    display: flex;
+    background-color: rgb(11, 61, 61);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+.headerParts{
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    padding:20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: auto;
+
+}
+
+.link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.mainContent{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    color: rgb(27, 26, 26);
+}
+
+.content,.content2,.content3{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.content2{
+    background-color: rgb(243, 243, 243);
+}
+.content3{
+    background-color: rgb(216, 216, 255);
+}
+
+.subtitle1{
+    font-size: 90px;
+    align-self: center;
+}
+
+
+.whoWeAreImage{
+    width: 800px;
+    height: 400px;
+    background-color: grey;
+    align-self: center;
+}
+
+.imageAndTutors{
+    display:flex;
+    justify-content: center;
+    padding: 50px 200px;
+    gap: 400px;
+}
+
+.discoverTutors,.becomeTutor,.findOutMore{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 30px;
+    border: none;
+    color: white;
+}
+
+.discoverTutors{
+    background-color: red;
+}
+.becomeTutor{
+    background-color: rgb(45, 138, 226);
+}
+.findOutMore{
+    background-color: green;
+}
+.aboutTutors{
+    display: flex;
+    list-style: none;
+    gap: 250px;
+    
+}
+
+.tutorImage{
+    width: 400px;
+    background-color: grey;
+    height: 500px;
+}
+
+.footer{
+    text-align: center;
+}
