@@ -46,7 +46,7 @@ h1{
 }
 
 .content,.content2,.content3{
-    padding: 10px 30px;
+    padding: 60px 30px;
     display: flex;
     flex-direction: column;
     padding: 50px;
@@ -65,17 +65,26 @@ h1{
 
 
 .whoWeAreImage{
-    width: 800px;
-    height: 400px;
-    background-color: grey;
-    align-self: center;
+    align-items: center;
+    justify-content: center;
+    min-width: 600px;
+    
+}
+
+.whoWeAreImage img{
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  
 }
 
 .imageAndTutors{
     display:flex;
     justify-content: center;
+    flex-direction: column;
     padding: 50px 200px;
-    gap: 400px;
+    gap: 10px;
 }
 
 .discoverTutors,.becomeTutor,.findOutMore{
@@ -110,4 +119,13 @@ h1{
 
 .footer{
     text-align: center;
+}
+
+.scrollButton{
+    width: 15px;
+    background-color: lightgray;
+    height: 15px;
+    border-radius: 10px;
+    border-style: solid;
+
 }
