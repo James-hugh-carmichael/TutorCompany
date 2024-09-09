@@ -21,7 +21,10 @@ p {
 }
 
 /* Layout and Containers */
-.header, .top-section, .our-tutors-content, .bottom-section {
+.header, 
+.top-section, 
+.our-tutors-content, 
+.bottom-section {
     padding: 3em;
 }
 
@@ -34,7 +37,7 @@ p {
     color: white;
 }
 
-.subtitle{
+.subtitle {
     margin-left: 150px;
 }
 
@@ -43,22 +46,21 @@ p {
     justify-content: space-between;
 }
 
-.content-package, .our-tutors-content, .be-a-tutor-wrapper {
+.content-package, 
+.our-tutors-content, 
+.be-a-tutor-wrapper {
     display: grid;
 }
 
-.our-tutors-content{
+.our-tutors-content {
     background-color: rgb(233, 251, 255);
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .content-package {
     grid-template-columns: 1fr 1fr;
     gap: 1;
-}
-
-.our-tutors-content {
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
 }
 
 .be-a-tutor-wrapper {
@@ -73,7 +75,25 @@ p {
     gap: 60px;
 }
 
+.footer {
+    background-color: rgb(23, 23, 61);
+    color: white;
+    font-size: 0.8em;
+    margin: 0;
+    display: block;
+}
+
+.footer-text {
+    padding: 30px;
+    text-align: center;
+    margin: 0;
+}
+
 /* Buttons and Interactions */
+.option:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+}
 .sign-up {
     font-size: 30px;
     padding: 0.7em;
@@ -82,14 +102,25 @@ p {
     background-color: rgb(136, 136, 255);
     border: none;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(40, 40, 255,0.8);
+    box-shadow: 0px 0px 20px rgba(40, 40, 255, 0.8);
+    transition: all 0.2s;
+}
+
+.sign-up:hover, 
+.sign-up:active {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.sign-up:active {
+    opacity: 0.5;
 }
 
 .circle-button {
-    width: 11px;
-    height: 11px;
+    width: 14px;
+    height: 14px;
     padding: 0;
-    border-radius: 6px;
+    border-radius: 7px;
     border-style: solid;
 }
 
@@ -104,7 +135,10 @@ p {
 }
 
 /* Images and Media */
-.photo-wrapper, .photo1, .photo2, .happy-tutor {
+.photo-wrapper, 
+.photo1, 
+.photo2, 
+.happy-tutor {
     width: 100%;
     height: auto;
 }
@@ -112,13 +146,15 @@ p {
 .photo-wrapper {
     display: flex;
     justify-content: center;
+    overflow: hidden;
     padding: 0;
 }
 
-.photo1 {
-    width: 80%;
-    max-width: 560px;
-    min-width: 480px;
+.selector-image {
+    width: 560px;
+    height: 373.33px;
+    object-fit: cover;
+    object-position: center;
     margin-bottom: 10px;
 }
 
@@ -135,8 +171,16 @@ p {
     min-width: 500px;
 }
 
+.photo-package {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* Text Formatting */
-.option, .our-tutors-text, .inline-text {
+.option, 
+.our-tutors-text, 
+.inline-text {
     display: inline-block;
     margin: 0 2em;
     padding: 0.75em;
@@ -146,6 +190,8 @@ p {
     font-size: 1.5em;
 }
 
-.our-tutors-subtitle{
+.our-tutors-subtitle {
     margin-left: 150px;
 }
+
+/* Responsive Design */

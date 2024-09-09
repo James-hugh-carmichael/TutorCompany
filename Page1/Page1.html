@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,19 +7,19 @@
     <title>Welcome Page</title>
 </head>
 <body>
-    <section class="header">
+    <header class="header">
         <h1>For The Students </h1>
-        <section class="selection-menu">
+        <nav class="selection-menu">
             <h3 class="option">Tutors</h3>
             <h3 class="option">Revision Notes</h3>
             <h3 class="option">Contact Us</h3>
             <h3 class="option">Past Papers</h3>
             <h3 class="option">Log in</h3>
             <h3 class="option">About Us</h3>
-       </section>
-    </section>
+       </nav>
+    </header>
 
-    <section class="main-content">
+    <main class="main-content">
 
         <section class="top-section">
                <h2 class="subtitle">Made By Students - For Students</h2>
@@ -33,7 +34,9 @@
                         
                         <section class="photo-package">
                             <section class="photo-wrapper">
-                                <img id="photo1" src="images/download.jpg" class="photo1">
+                                <img id="photo1" src="images/Tutor-slider-image-1.jpg" class="selector-image" alt="Tutor helping a student">
+                                <img id="photo2" src="images/Tutor-slider-image-2.jpg" style="display: none;" class="selector-image" alt="Students studying together">
+                                <img id="photo3" src="images/Tutor-slider-image-3.jpg" style="display: none;" class="selector-image" alt="Tutor explaining content">
                             </section>
                             <section class="button-bar">
                                 <button id="button1" class="circle-button"></button>
@@ -48,7 +51,7 @@
 
         
         <section class="our-tutors-content">
-            <img src="images/Lake_Mountains_Scenery_441215_1920x1200.jpg" class="photo2">
+            <img src="images/Tutor image 2.jpg" class="photo2" alt="Our Tutors">
             <section class="text">
                 <h2 class="our-tutors-subtitle">Our Tutors</h2>
                 <p class="our-tutors-text">Students are always put first thats why all our tutors are fully DBS checked, interviewed and flexible for you.<br><br>
@@ -66,12 +69,16 @@
                     I believe putting you guys first, making signing up easy and a free DBS check on us if you are successful in interview. </p>
                     <button class="sign-up">Sign Up</button>
                 </div>
-                <img src="images/happytutor.jpg" class="happy-tutor">
+                <img src="images/happytutor.jpg" class="happy-tutor" alt="Online meeting">
                 
             </section>
         </section>
+    </main>
 
-    </section>
+    <footer class="footer">
+        <p class="footer-text">Copyright © 2024 www.ForTheStudents.co.uk All rights reserved.</p>
+    </footer>
 
-
+    <script src="script.js"></script>
 </body>
+</html>
