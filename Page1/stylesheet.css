@@ -42,7 +42,7 @@ p {
 }
 
 .selection-menu {
-    display: block;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -60,12 +60,13 @@ p {
 
 .content-package {
     grid-template-columns: 1fr 1fr;
+    gap: 40px;
     gap: 1;
 }
 
 .be-a-tutor-wrapper {
     grid-template-columns: 0.75fr 0.5fr;
-    gap: 100px;
+    gap: 40px;
 }
 
 .text-and-button-wrapper {
@@ -94,6 +95,7 @@ p {
     text-decoration-line: underline;
     cursor: pointer;
 }
+
 .sign-up {
     font-size: 30px;
     padding: 0.7em;
@@ -135,11 +137,12 @@ p {
 }
 
 /* Images and Media */
-.photo-wrapper, 
-.photo1, 
+.selector-image, 
 .photo2, 
 .happy-tutor {
     width: 100%;
+    max-width: 546px;
+    min-width: 546px;
     height: auto;
 }
 
@@ -151,24 +154,25 @@ p {
 }
 
 .selector-image {
-    width: 560px;
-    height: 373.33px;
+    width: 70%;
     object-fit: cover;
     object-position: center;
     margin-bottom: 10px;
 }
 
 .photo2 {
-    width: 85%;
-    max-width: 650px;
-    min-width: 500px;
-    place-self: center;
-    flex-shrink: 0.5;
+    width: 70%;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 10px;
 }
 
 .happy-tutor {
-    max-width: 600px;
-    min-width: 500px;
+    width: 70%;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 10px;
+    height: auto;
 }
 
 .photo-package {
@@ -182,7 +186,6 @@ p {
 .our-tutors-text, 
 .inline-text {
     display: inline-block;
-    margin: 0 2em;
     padding: 0.75em;
 }
 
@@ -195,3 +198,109 @@ p {
 }
 
 /* Responsive Design */
+
+/* For screens between 1200px and 1600px */
+@media screen and (max-width: 1600px) {
+    body {
+        font-size: 15px;
+    }
+
+    .header, 
+    .top-section, 
+    .our-tutors-content, 
+    .bottom-section {
+        padding: 2.5em;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 3.5em;
+    }
+
+    p {
+        font-size: 1.6em;
+    }
+
+    .photo2, .happy-tutor, .selector-image {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* For screens between 768px and 1200px (Tablets) */
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    .header, 
+    .top-section, 
+    .our-tutors-content, 
+    .bottom-section {
+        padding: 2em;
+    }
+
+    .our-tutors-content, 
+    .content-package {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto; 
+    }
+    .photo2, 
+    .happy-tutor, 
+    .selector-image {
+        max-width: 400px;
+        width: 100%; 
+        height: auto;
+    }
+
+    .be-a-tutor-wrapper {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .our-tutors-subtitle {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .reverse .photo-wrapper {
+        order: 2; /
+    }
+
+    .our-tutors-content.reverse, 
+    .content-package.reverse {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 40px;
+    }
+
+    .reverse .photo-wrapper {
+        order: 2; 
+    }
+
+    .reverse .our-tutors-text {
+        order: 1; 
+    }
+
+    .center .subtitle{
+        text-align: center;
+    }
+}
+
