@@ -1,0 +1,57 @@
+
+Welcome Page - README
+
+##Project Overview
+This project represents a web page titled "For The Students", designed to serve as a platform for students to access tutors, revision notes, and other educational resources. 
+The page has a clean, professional layout and uses HTML, CSS, and JavaScript to provide an interactive user experience. 
+The platform is aimed at connecting university students as tutors with younger students in need of guidance.
+
+##Features
+Responsive Design: The webpage adjusts to different screen sizes using CSS Grid for layout and a mobile-friendly design.
+Image Slider: Includes a set of rotating images for displaying different tutoring scenes.
+Navigation Menu: Links to various important sections like tutors, past papers, login, and more.
+Call to Action: A "Become a tutor" section encourages visitors to sign up to offer tutoring services.
+Interactive Elements: Includes a sign-up button, hover effects on menu options, and image selectors for the slider.
+
+
+##File Structure
+1. HTML
+The main structure is provided by the index.html file, which includes:
+-  Header: Contains a title and navigation menu.
+-  Main Content: Includes multiple sections with information about the platform, tutors, and a call to action for becoming a tutor.
+-  Footer: Simple footer with copyright details.
+
+2. CSS
+The stylesheet.css file defines the appearance of the web page:
+-  Global Styles: Basic styling for fonts, margins, and text.
+-  Layout and Containers: Styles for the main sections such as the header, top section, and footer.
+-  Buttons and Interactions: Includes styles for buttons, hover states, and a sign-up button with shadow effects.
+-  Images: Image styling ensures responsiveness and proper display across devices.
+-  Responsive Design: Grid-based layout to ensure the page looks good on different screen sizes.
+
+3. JavaScript
+The script.js file provides interactivity for the image slider:
+-  Image Slider: Implements functionality to toggle between three images using buttons.
+-  Default Image: The first image is displayed by default, and clicking on buttons shows the relevant image while changing the button's background color.
+
+Instructions
+Prerequisites
+To run the project, you need a browser that supports modern HTML, CSS, and JavaScript standards.
+
+How to Run
+-  Clone the repository or download the source files.
+-  Ensure the file structure is as follows:
+      index.html
+      stylesheet.css
+      script.js
+      images/ (contains images for the slider and tutor section)
+Open the index.html file in a web browser to view the page.
+
+Future Improvements
+-  Add More Pages: Implement separate pages for "Tutors", "Past Papers", "Login", etc.
+-  User Authentication: Add login functionality for both students and tutors.
+-  Backend Integration: Include a database for managing user accounts, tutor profiles, and more.
+-  Responsive Optimizations: Enhance mobile responsiveness further with media queries for small screen devices.
+
+Contact
+For any issues or contributions, feel free to reach out via email at: support@forthestudents.co.uk.
