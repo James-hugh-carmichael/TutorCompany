@@ -7,22 +7,31 @@
     <title>Welcome Page</title>
 </head>
 <body>
-    <header class="header">
-        <h1>For The Students </h1>
-        <nav class="selection-menu">
-            <h3 class="option">Tutors</h3>
-            <h3 class="option">Revision Notes</h3>
-            <h3 class="option">Contact Us</h3>
-            <h3 class="option">Past Papers</h3>
-            <h3 class="option">Log in</h3>
-            <h3 class="option">About Us</h3>
-       </nav>
+    <header class="header" id="header">
+        <h1>For The Students</h1>
+        <nav class="main-nav">
+        <button id="hamburger" class="hamburger">&#9776; Menu</button>
+        <nav class="nav-links" id="navLinks">
+            <header class="nav-header">
+                <h2 class="nav-title" id="navTitle">Menu</h2>
+                <button id="exitHamburger" class="exit-hamburger">&#x2715;</button>
+            </header>
+            <ul>
+                <li class="nav-item"><a href="#">Tutors</a></li>
+                <li class="nav-item"><a href="#">Revision Notes</a></li>
+                <li class="nav-item"><a href="#">Contact Us</a></li>
+                <li class="nav-item"><a href="#">Past Papers</a></li>
+                <li class="nav-item"><a href="#">Log in</a></li>
+                <li class="nav-item"><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </nav>
     </header>
 
     <main class="main-content">
 
         <section class="top-section">
-               <h2 class="subtitle">Made By Students - For Students</h2>
+               <h2 class="first-subtitle">Made By Students - For Students</h2>
 
                <section class="content-package">
                     <p class="why-we-started">
@@ -51,12 +60,15 @@
 
         
         <section class="our-tutors-content reverse">
-            <div class="photo-wrapper">
-                <img src="images/Tutor image 2.jpg" class="photo2" alt="Our Tutors">
+            <section class="photo2-section">
+                <div class="photo-wrapper">
+                    <img src="images/Tutor image 2.jpg" class="photo2" alt="Our Tutors">
+                </div>
             </div>
-            <section class="text">
+            </section>
+            <section class="our-tutors-section">
                 <h2 class="our-tutors-subtitle">Our Tutors</h2>
-                <p class="our-tutors-text">Students are always put first thats why all our tutors are fully DBS checked, interviewed and flexible for you.<br><br>
+                <p class="our-tutors-text">Students are always put first that's why all our tutors are fully DBS checked, interviewed and flexible for you.<br><br>
                 Every tutor at ForTheStudents is a current university student who has excelled in the subjects they teach. 
                 They’re not only knowledgeable, but they also understand the challenges you’re facing because they’ve been there too. 
                 They’re here to help you succeed, not just academically, but in building the confidence you need for the future.</p>
@@ -64,17 +76,18 @@
         </section>           
 
         <section class="bottom-section">
-            <h2 class="subtitle center">Become a tutor</h2>
             <section class="be-a-tutor-wrapper">
                 <div class="text-and-button-wrapper">
-                    <p class="inline-text">I made this site having been fed up of hidden fees, not being able to work on my own schedule and only getting a small amount of money that I charged when tutoring.
-                    I believe putting you guys first, making signing up easy and a free DBS check on us if you are successful in interview. </p>
+                    <h2 class="become-a-tutor-title">Become a tutor</h2>
+                    <p class="inline-text">I made this site because I was frustrated of hidden fees, not being able to work on my own schedule and only getting a small amount of money that I charged when tutoring.
+                    I believe putting you first, making signing up easy and a free DBS check on us if you are successful in interview. </p>
                     <button class="sign-up">Sign Up</button>
                 </div>
-                <div class="photo-wrapper">
-                    <img src="images/happytutor.jpg" class="happy-tutor" alt="Online meeting">
+                <div class="photo3-flex">
+                    <div class="photo-wrapper photo3wrapper">
+                        <img src="images/happytutor.jpg" class="happy-tutor" alt="Online meeting">
+                    </div>
                 </div>
-                
                 
             </section>
         </section>
