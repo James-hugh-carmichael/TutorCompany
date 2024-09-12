@@ -51,7 +51,6 @@ Future Improvements
 -  Add More Pages: Implement separate pages for "Tutors", "Past Papers", "Login", etc.
 -  User Authentication: Add login functionality for both students and tutors.
 -  Backend Integration: Include a database for managing user accounts, tutor profiles, and more.
--  Responsive Optimizations: Enhance mobile responsiveness further with media queries for small screen devices.
 
 Contact
 For any issues or contributions, feel free to reach out via email at: support@forthestudents.co.uk.
